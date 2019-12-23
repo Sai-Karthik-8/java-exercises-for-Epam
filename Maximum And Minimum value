@@ -1,0 +1,28 @@
+import java.util.*;
+import java.util.Scanner;
+class Maximum
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter lentgh of array");
+int n=sc.nextInt();
+int arr[]=new int[n];
+int min=0,max=0;
+for(int i=0;i<n;i++)
+{
+System.out.println("Enter elements of array");
+arr[i]=sc.nextInt();
+if(arr[i]<min)
+{
+    min=arr[i];
+}
+else if(arr[i]>max)
+{
+    max=arr[i];
+}
+}
+System.out.println("max="+max);
+System.out.println("min="+min);
+}
+}
